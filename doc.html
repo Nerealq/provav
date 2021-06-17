@@ -6,13 +6,18 @@
 <body>
 
 <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<p id="principal" >This is a paragraph.</p>
 
 <script >
 fetch('missatge.txt')
 	.then ( resposta=>resposta.text())
-	.then(text=>console.log(text))
+	.then(text=>{
+		document.
+		 .getElementById("principal")
+		.innerHTML=text;
+	
 	.catch(error=>console.log(error));
+	)}
 
 </script>
 
